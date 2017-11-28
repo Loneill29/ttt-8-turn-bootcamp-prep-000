@@ -35,11 +35,10 @@ end
 end
 
 def turn(board)
-  puts "Please enter 1-9:"
     if valid_move?(board, index) == false
       puts "Please enter 1-9:"
     else
-      move(board, index, symbol = "X")
+      return move(board, index, symbol = "X")
     end
-  display_board(board)
+  return display_board(board)
 end
