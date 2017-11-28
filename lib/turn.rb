@@ -48,13 +48,3 @@ def turn(board)
 end
 
 
-
- +  valid = valid_move?(board, input)
- +  if valid == true
- +      move(board, input, "X")
- +      display_board(board)
- +  else
- +    puts "please enter 1-9:"
- +    input = gets.strip
- +  end
- +end
