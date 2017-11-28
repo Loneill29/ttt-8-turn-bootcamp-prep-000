@@ -41,7 +41,7 @@ def turn(board)
     if !valid_move?(board, index)
       print "Please enter 1-9:"
     else
-      move(board, index, current_player(board))
+      move(board, index, symbol = "X")
     end
   display_board(board)
 end
