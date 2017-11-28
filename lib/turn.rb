@@ -10,8 +10,8 @@ def display_board(board)
     puts " #{board[8]} "
  end
 
- def input_to_index(move)
- move.to_i - 1
+ def input_to_index(selection)
+ selection.to_i - 1
 
  end
 
