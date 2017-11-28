@@ -10,8 +10,8 @@ def display_board(board)
     puts " #{board[8]} "
  end
 
- def input_to_index(selection)
- selection.to_i - 1
+ def input_to_index(move)
+move.to_i - 1
 
  end
 
@@ -37,7 +37,7 @@ end
 def turn(board)
   print "Please enter 1-9:"
     userInput = gets.strip
-    index = input_to_index(selection)
+    index = input_to_index(move)
     if !valid_move?(board, index)
       print "Please enter 1-9:"
     else
